@@ -12,6 +12,19 @@
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    #wdOut{
+      display:flex;
+      justify-content: flex-end;
+    }
+    #wd {
+      text-align: right;
+      border: 1px solid red;
+      background-color: #fcf795;
+      width: 50%;
+}
+   
+  </style>
 
 <body>
   <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
@@ -43,14 +56,16 @@
     </div>
 </nav>
      <div style="color: black;" id="catFact"></div>
-  <!----- weatherAPI ----->
-  <div class="wd">
-  <div id="place"></div>
-<div id="state"></div>
-<div id="time"></div>
-  <span> ತಾಪಮಾನ: <span id="temperature"></span> ಡಿಗ್ರಿಗಳು </span><br>
-  <span>ಆರ್ದ್ರತೆ:<span id="humidity"></span></span><br>
-  <span>ನಿರೀಕ್ಷಿಸಿದ ಸಮಯ: <span>observedAt</span></span>
+ <!-- weather API -->
+  <div id="wdOut">
+    <div id="wd">
+      <div id="place"></div>
+      <div id="state"></div>
+      <div id="time"></div>
+      <span>ತಾಪಮಾನ: <span id="temperature"></span> ಡಿಗ್ರಿಗಳು </span><br>
+      <span>ಆರ್ದ್ರತೆ: <span id="humidity"></span></span><br>
+      <span>ನಿರೀಕ್ಷಿಸಿದ ಸಮಯ: <span id="observedAt"></span></span>
+    </div>
   </div>
       <!-- main banner -->
     <section class="bgimage" id="home">
